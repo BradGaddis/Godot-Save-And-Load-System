@@ -1,12 +1,12 @@
 @tool
 class_name SaveAndLoadPlugin extends EditorPlugin
 
-const FILEUID = "uid://lkfpqb461clk"
-const PLUGINNAME = "save-and-load-system"
+const FILE_UID = "uid://lkfpqb461clk"
+const PLUGIN_NAME = "save-and-load-system"
 
 func _enable_plugin() -> void:
 	# Add autoloads here.
-	add_autoload_singleton("File" , ResourceUID.uid_to_path(FILEUID))
+	add_autoload_singleton("File" , ResourceUID.uid_to_path(FILE_UID))
 
 
 func _disable_plugin() -> void:
