@@ -38,9 +38,6 @@ func _ready() -> void:
 		load_game()
 	else:
 		print("Save didnt exist")
-		if OS.is_debug_build():
-			progress = load("uid://d1mpepah1fwti")
-			return
 		new_game()
 
 func save_exists() -> bool:
